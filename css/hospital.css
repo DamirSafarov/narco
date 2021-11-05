@@ -1,0 +1,1701 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap");
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.container-big {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.scroll-page_btn {
+  position: fixed;
+  bottom: 100px;
+  right: 120px;
+  display: none;
+  padding: 30px 20px;
+  background: #6F2205;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.scroll-page_btn:hover {
+  padding: 25px 15px;
+}
+
+/* HEADER */
+.header-red {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 46, 50, 0.59);
+          box-shadow: 0px 3px 8px 0px rgba(50, 46, 50, 0.59);
+  background: linear-gradient(0deg, #6F2205, #6F2205), linear-gradient(122.63deg, rgba(0, 0, 0, 0.5) 30.48%, rgba(255, 255, 255, 0) 90.46%, rgba(147, 176, 208, 0.5) 90.46%);
+}
+
+.header-inner {
+  padding: 17px 0px 0px 0px;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.header-phone img {
+  margin-right: 10px;
+}
+
+.header-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+}
+
+.header-time img {
+  margin-right: 10px;
+}
+
+.header-nav {
+  margin-left: 98px;
+  margin-right: 36px;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-item {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125.5%;
+  text-align: right;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header-item_link {
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.header-item_link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.header-item_link:hover::after {
+  width: 100%;
+}
+
+.header-social_link:nth-child(2) {
+  margin: 0px 20px;
+}
+
+.header-social_img {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.header-social_img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header-place_mark {
+  margin-bottom: 14px;
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-place_mark img {
+  margin-right: 8px;
+}
+
+.header-bottom_red {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-bottom_red {
+  padding: 10px 0px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-bottom_title {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 125.5%;
+  color: #EACC97;
+  text-decoration: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.header-bottom_title:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* ABOUT COMPANY */
+.about-company {
+  background-image: url(../img/about_bg_optimized.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 865px;
+  padding-top: 230px;
+  margin-bottom: 95px;
+}
+
+.company-inner_subtitle {
+  text-align: center;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #000000;
+}
+
+.company-inner_subtitle span {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #000000;
+}
+
+.company-inner_title {
+  margin-top: 25px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+.about-company_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-subtitle {
+  border-bottom: 2px dashed #EACC97;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #A36C22;
+}
+
+.about-title {
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  color: #000000;
+  margin-bottom: 17px;
+}
+
+.about-text {
+  font-family: Ubuntu;
+  max-width: 560px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160.5%;
+  color: #000000;
+}
+
+.about-text--current {
+  margin-bottom: 15px;
+}
+
+.about-link_btn {
+  margin-top: 25px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125.5%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6F2205;
+  width: 255px;
+  height: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.about-link_btn:hover {
+  -webkit-box-shadow: 0px 0px 35px rgba(111, 34, 5, 0.2);
+          box-shadow: 0px 0px 35px rgba(111, 34, 5, 0.2);
+}
+
+.about-company_person {
+  position: relative;
+}
+
+.about-company_person::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/about_pers-heart_optimized.png);
+  right: 0;
+  top: 300px;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+/* ЦЕНЫ НА АЛКОГОЛИЗМЕ */
+.alco-price {
+  margin-bottom: 110px;
+}
+
+.health-alco_items {
+  margin-top: 100px;
+}
+
+.health-items_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.healt-alco_list {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.health-alco_item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 23px 18px 20px 30px;
+  position: relative;
+}
+
+.health-alco_item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.health-alco_popular {
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.alco-popular_price {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160.5%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #EACC97;
+  border-radius: 10px;
+  padding: 5px 25px 10px 25px;
+}
+
+.alco-item_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.alco-item_info {
+  margin-bottom: 25px;
+}
+
+.alco-item_price {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 8px 5px 8px 10px;
+  background: rgba(222, 232, 236, 0.3);
+  border-radius: 5px;
+}
+
+.alco-item_price span {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 138.5%;
+  color: #93B0D0;
+}
+
+.alco-item_link {
+  margin-top: 25px;
+  padding: 8px 68px 9px 68px;
+  background: #6F2205;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125.5%;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.alco-item_link:hover {
+  background: transparent;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  color: black;
+  border: 1px solid #6F2205;
+}
+
+/* УСЛУГИ */
+.our-services {
+  margin: 0px 0px 150px 0px;
+}
+
+.services-subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  text-align: center;
+  color: #A36C22;
+  border-bottom: 2px dashed #EACC97;
+  width: 185px;
+  margin: 0 auto;
+}
+
+.services-title {
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.services-text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160.5%;
+  text-align: center;
+  color: #000000;
+  max-width: 680px;
+  margin: 18px auto 0px auto;
+}
+
+.services-items {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.services-item {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 350px;
+  min-height: 182px;
+  padding: 30px 15px 30px 30px;
+}
+
+.services-item_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-item_title {
+  margin-left: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #000000;
+}
+
+.services-item_text {
+  margin-top: 15px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.services-item_link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138.5%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #6F2205;
+}
+
+.services-item_link img {
+  margin-left: 9px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.services-item_link:hover img {
+  margin-left: 25px;
+}
+
+/* РЕЗУЛЬТАТЫ */
+.result {
+  padding: 100px 0px;
+  background: linear-gradient(41.94deg, rgba(234, 204, 151, 0.2) 16.59%, rgba(255, 255, 255, 0) 95.72%), linear-gradient(137.6deg, rgba(255, 255, 255, 0.8) 17.9%, rgba(255, 255, 255, 0) 123.27%);
+}
+
+.result-subtitle {
+  border-bottom: 2px dashed #EACC97;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #A36C22;
+  max-width: 215px;
+  margin: 0 auto;
+}
+
+.result-title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result-text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160.5%;
+  text-align: center;
+  color: #000000;
+}
+
+/* АЙТЕМЫ */
+.result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 50px 0px 60px;
+  padding: 50px 0px;
+}
+
+.result-item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.result-item_img {
+  position: relative;
+}
+
+.result-item_img::after {
+  position: absolute;
+  content: "";
+  left: 80%;
+  top: 80%;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/result-item_arrow_optimized.png);
+}
+
+.result-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result-item_info {
+  max-width: 615px;
+}
+
+.result-item_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 138.5%;
+  color: #000000;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.result-item_text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #000000;
+}
+
+/* ДОКТОРА */
+.our-doctors_hospital {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(222, 232, 236, 0.2)), to(rgba(222, 232, 236, 0.076))), url(../img/our-doctors_optimized.jpg);
+  background: linear-gradient(180deg, rgba(222, 232, 236, 0.2) 5%, rgba(222, 232, 236, 0.076) 100%), url(../img/our-doctors_optimized.jpg);
+  min-height: 785px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 90px;
+}
+
+.our-doctors_content {
+  padding-top: 95px;
+}
+
+.doctors-subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #A36C22;
+  border-bottom: 2px dashed #EACC97;
+  margin: 0 auto;
+  max-width: 233px;
+}
+
+.doctors-title {
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.doctor__slider {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-arrow {
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding: 25px 30px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.slick-arrow:hover {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.doctor__slider-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.doctor__slider-inner::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  left: 90%;
+  bottom: 0;
+  background-image: url(../img/ques-mark.svg);
+  background-repeat: no-repeat;
+}
+
+.doctor__slider-img {
+  position: absolute;
+  top: -70px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #DEE8EC;
+  border-radius: 2px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slick-dots .slick-active {
+  background: #93B0D0;
+}
+
+.doctor__slider-info {
+  padding: 29px 29px 36.5px 300px;
+}
+
+.doctor__slider-name {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 138.5%;
+  color: #000000;
+}
+
+.doctor__slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.doctor__slider-spec {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #A36C22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doctor__slider-spec img {
+  margin-right: 10px;
+}
+
+.doctor__slider-time {
+  margin-left: 30px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #A36C22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doctor__slider-time img {
+  margin-right: 10px;
+}
+
+.doctor__slider-text {
+  margin-top: 14px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #000000;
+  max-width: 575px;
+}
+
+.doctor__slider-link {
+  margin-top: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138.5%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #6F2205;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doctor__slider-link img {
+  margin-left: 10px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.doctor__slider-link:hover img {
+  margin-left: 25px;
+}
+
+.doctor__slider-btn {
+  width: 255px;
+  height: 60px;
+  background: #6F2205;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  border: none;
+  outline: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto 0px auto;
+  cursor: pointer;
+}
+
+.doctor__slider-btn:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slick-list {
+  padding-top: 60px;
+}
+
+/* СЕРТИФИКАТЫ */
+.certificate-subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #A36C22;
+  border-bottom: 2px dashed #EACC97;
+  margin: 0 auto;
+  max-width: 283px;
+}
+
+.certificate-title {
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.certificate-text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160.5%;
+  text-align: center;
+  color: #000000;
+  max-width: 685px;
+  margin: 20px auto 0px auto;
+}
+
+/* СЕРТИФИКАТ АЙТЕМЫ */
+.certificate__slider {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certificate__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.certificate-link:nth-child(even) {
+  margin: 0px 20px;
+}
+
+/* ПРАЙС-ЛИСТ */
+.price-list {
+  margin-top: 250px;
+  margin-bottom: 90px;
+}
+
+.price-list_subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #A36C22;
+  border-bottom: 2px dashed #EACC97;
+  margin: 0 auto;
+  max-width: 107px;
+}
+
+.price-list_title {
+  margin-top: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.price-list_items {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+}
+
+.price-list_item {
+  padding: 20px 12px 20px 30px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.price-item_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.price-item_title {
+  margin-top: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.price-item_price {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: black;
+  margin-bottom: 15px;
+  padding: 18px 5px 18px 10px;
+  background: rgba(222, 232, 236, 0.3);
+  border-radius: 5px;
+}
+
+.price-item_price span {
+  color: #93B0D0;
+}
+
+.price-item_info {
+  margin-bottom: 12px;
+}
+
+.price-info_text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160.5%;
+  color: #000000;
+}
+
+.price-info_text img {
+  margin-right: 15px;
+}
+
+.price-info_text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-item_link {
+  margin-top: 12px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138.5%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #6F2205;
+  cursor: pointer;
+}
+
+.price-item_link img {
+  margin-left: 9px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.price-item_link:hover img {
+  margin-left: 25px;
+}
+
+/* ВОПРОСЫ */
+.question {
+  background: url(../img/question-bg_optimized.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.question-content {
+  padding: 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.question-subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  border-bottom: 2px dashed #FFFFFF;
+  max-width: 197px;
+}
+
+.question-title {
+  margin-top: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  color: #FFFFFF;
+}
+
+.question-text {
+  margin-top: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160.5%;
+  color: #FFFFFF;
+  max-width: 433px;
+}
+
+/* ФОРМА ИНПУТОВ */
+.question-right_block {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 20px 25px 30px 25px;
+}
+
+.question-right_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 138.5%;
+  text-align: center;
+  color: #000000;
+}
+
+.question-right_btn {
+  width: 290px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto 0px auto;
+  border: none;
+  outline: none;
+  background: #6F2205;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.question-right_btn:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-right_inputs {
+  margin-top: 20px;
+}
+
+.question-input {
+  outline: none;
+  width: 275px;
+  height: 50px;
+  border: 1px solid #93B0D0;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 107%;
+  color: #93B0D0;
+  padding-left: 18px;
+}
+
+.question-input:nth-child(1) {
+  margin-right: 12px;
+}
+
+.question-input::-webkit-input-placeholder {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 107%;
+  color: #93B0D0;
+}
+
+.question-input:-ms-input-placeholder {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 107%;
+  color: #93B0D0;
+}
+
+.question-input::-ms-input-placeholder {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 107%;
+  color: #93B0D0;
+}
+
+.question-input::placeholder {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 107%;
+  color: #93B0D0;
+}
+
+/* НЕ ХОЧЕТ ЛЕЧИТЬСЯ ? */
+.health {
+  background-image: url(../img/health-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 82px 0px 88px 0px;
+  margin-bottom: 105px;
+}
+
+.health-content {
+  margin-left: 500px;
+}
+
+.health-content_subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  border-bottom: 2px dashed #FFFFFF;
+}
+
+.health-content_title {
+  margin-top: 30px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.health-content_text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  max-width: 635px;
+  margin-bottom: 45px;
+}
+
+.health-content_btn {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125.5%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 18px 20px;
+  background: #6F2205;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.health-content_btn:hover {
+  background: transparent;
+  border: 1px solid #6F2205;
+}
+
+/* ФОТО ХОСПИТАЛА */
+.photos-hospital {
+  background: linear-gradient(41.94deg, rgba(234, 204, 151, 0.5) 16.59%, rgba(255, 255, 255, 0) 95.72%), url(../img/hospital-bg.png);
+  padding: 92px 0px 100px 0px;
+}
+
+.hospital_content_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 107%;
+  text-align: center;
+  color: #000000;
+}
+
+.photos-hospital_list {
+  margin-top: 35px;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+/* ФУТЕР */
+.footer {
+  background: linear-gradient(0deg, #93B0D0, #93B0D0), linear-gradient(139.76deg, rgba(255, 255, 255, 0.8) 18.18%, rgba(255, 255, 255, 0) 123.91%);
+}
+
+.footer-content_top {
+  padding: 20px 0px 95px 0px;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-top_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.footer-phone img {
+  margin-right: 10px;
+}
+
+.footer-place_mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.footer-place_mark img {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  padding-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-bottom_logo {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 125.5%;
+  color: #EACC97;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footer-bottom_logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-bottom_text {
+  margin-top: 10px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  max-width: 355px;
+}
+
+.footer-bottom_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+}
+
+.footer-nav {
+  margin-top: 25px;
+}
+
+.footer-list_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-list_link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-list_link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  background-color: white;
+  height: 1px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footer-list_link:hover::after {
+  width: 100%;
+}
+
+.footer-bottom_news {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.footer-news_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-news_item img {
+  border-radius: 5px;
+}
+
+.footer-news_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-news_text {
+  margin-left: 10px;
+}
+
+.footer-news_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+}
+
+.footer-news_time {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 138.5%;
+  color: #EACC97;
+}
+
+.footer-content_bottom {
+  padding: 20px 0px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer-content_bottom-info {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content_title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.footer-content_link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.dropbtn {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.drop-btn_arrow {
+  margin-left: 7px;
+}
+
+.drop-btn_arrow--current {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:not(:last-child) {
+  margin-right: 80px;
+}
+
+.dropdown-content {
+  margin-top: 12px;
+  display: none;
+  position: absolute;
+  min-width: 215px;
+  background: #FFFFFF;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.dropdown_link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138.5%;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown_link:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.dropdown_link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.dropdown_link:hover::after {
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
